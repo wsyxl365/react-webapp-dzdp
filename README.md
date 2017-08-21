@@ -1,7 +1,7 @@
 仿大众点评react webapp
 ==========
 ## 产品展示： 
-<img src="http://www.gosolo.top/img/dzdp-show.jpg"/><br/>
+<img src="https://github.com/wsyxl365/react-webapp-dzdp/blob/master/dzdp-show.jpg"/>
 
 ## 项目约定： 
 ### dev 约定
