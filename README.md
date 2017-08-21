@@ -3,6 +3,9 @@
 ## 产品展示： 
 <img src="https://github.com/wsyxl365/react-webapp-dzdp/blob/master/dzdp-show.jpg"/>
 
+## 介绍： 
+使用React技术栈全家桶，koa作为后台编写mock数据，开发的一款仿大众点评WebApp。
+
 ## 项目运行： 
 ### dev 
 1. npm install
@@ -11,18 +14,8 @@
 
 ### mock 
 1. npm run mock 开启mock服务器 端口是3000
-2. api模拟的url形式统一为 `/api?views=页面模块名&filename=文件名(&error=状态码)` 添加了error参数返回了错误提示， 约定数据结构为
-```javascript
-{
-  msg: '错误信息',
-  code: '错误码',  //开发阶段用状态吗模拟错误码
-  request: '请求的url地址'
-}
-
-```
-3. 文件名可以为使用接口的组件名小写，如果该组件使用多个接口，可以加编号如：test01.json, test02.json 对应的是 Test.js组件的接口文件
-3. api目录下文件夹要与views目录对应
-4. 静态资源目录为 `mock/static`
+3. 文件名可以为使用接口的组件名小写
+3. 使用koa作为接口后台
 
 ### 目录约定(src下)
 1. views目录存放容器组件，与route.js相对应，其展示组件存放于components文件夹对应目录, views目录下组件可以获取属性history,location,match,其子组件想使用这些,可以传递该属性,一般传递history较多
@@ -35,8 +28,4 @@
 8. static 全局样式和字体文件，其中vendor.styl是样式库，可以在其中封装mixins, stylus [请参考](http://www.zhangxinxu.com/jq/stylus/)
 9. tmpl 是html-webpack-plungin调用的模板，多页面应用多模板情况下可以在这添加其他模板
 
-### 目录约定(mock下)
-1. api/views/components 目录用防止mock对应模块的json文件，如home页面的advertisement组件 `api/home/advertisement01.json`后面01为该组件要获取的第一个api
-2. static 用于放置静态资源,比static/imgs下有图片img01.png，可以通过localhost:8080/imgs/img01.png获取
-3. function与server.js为mock服务器文件
 
