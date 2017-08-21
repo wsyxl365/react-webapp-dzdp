@@ -18,14 +18,8 @@
 3. 使用koa作为接口后台
 
 ### 目录约定(src下)
-1. views目录存放容器组件，与route.js相对应，其展示组件存放于components文件夹对应目录, views目录下组件可以获取属性history,location,match,其子组件想使用这些,可以传递该属性,一般传递history较多
-2. components下的shared是被多个views页面共享数据的组件
-3. layouts目录放置布局组件，一般来说不会与redux交互，并且可以考虑是无状态函数组件，与shared要区分开
-4. reducers 归总所有views页面的reducer
-5. routes 应用路由配置
-6. app.js 应用入口文件
-7. utils目录用于封装工具函数，如localStorage、地理信息获取等
-8. static 全局样式和字体文件，其中vendor.styl是样式库，可以在其中封装mixins, stylus [请参考](http://www.zhangxinxu.com/jq/stylus/)
-9. tmpl 是html-webpack-plungin调用的模板，多页面应用多模板情况下可以在这添加其他模板
-
-
+1. containers目录存放容器组件，与routeMap.jsx相对应，其展示组件存放于components文件夹对应目录
+2. components下是木偶组件，可以专门接收数据渲染页面
+4. router 应用路由配置
+5. index.js 应用入口文件
+6. utils目录用于封装工具函数，如localStorage等
