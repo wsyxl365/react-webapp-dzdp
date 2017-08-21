@@ -1,7 +1,7 @@
 仿大众点评react webapp
 ==========
-## 展示说明： 
-输入框可以输入: 全部分类、购物、景点 若其他情况等同与全部分类
+## 产品展示： 
+![](http://www.gosolo.top/img/dzdp-show.jpg) 
 
 ## 项目约定： 
 ### dev 约定
